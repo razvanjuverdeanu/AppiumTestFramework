@@ -1,0 +1,12 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 32.951 s <<< FAILURE! - in TestSuite
+smallDemo(SearchTests)  Time elapsed: 8.822 s  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at SearchTests.smallDemo(SearchTests.java:29)
+
+closeBrowser(BaseTest)  Time elapsed: 8.857 s  <<< FAILURE!
+java.lang.NullPointerException
+	at BaseTest.closeBrowser(BaseTest.java:37)
+
