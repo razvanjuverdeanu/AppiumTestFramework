@@ -21,11 +21,14 @@ public class TheDriver extends ApplicationContextConfig {
 
     public TheDriver() throws MalformedURLException {
         DesiredCapabilities dc = new DesiredCapabilities();
+        String path = System.getProperty("user.dir");
 
         dc.setCapability("platformName", "Android");
         dc.setCapability("platformVersion", "8.0.0");
         dc.setCapability("deviceName", "emulator-5554");
-        dc.setCapability("chromedriverExecutable", "C:\\Users\\RJ\\node_modules\\appium\\node_modules\\appium-chromedriver\\chromedriver\\win\\chromedriver.exe");
+
+       // dc.setCapability("chromedriverExecutable", "C:\\Users\\RJ\\node_modules\\appium\\node_modules\\appium-chromedriver\\chromedriver\\win\\chromedriver.exe");
+        dc.setCapability("chromedriverExecutable", path + "\\src\\main\\resources\\chromedriver.exe");
         dc.setCapability(CapabilityType.BROWSER_NAME, "Chrome");
         dc.setCapability("noReset", "true");
         dc.setCapability("newCommandTimeout", 600);

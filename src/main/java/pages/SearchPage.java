@@ -1,5 +1,6 @@
 package pages;
 
+import io.qameta.allure.Step;
 import org.openqa.selenium.By;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.support.ui.Select;
@@ -32,6 +33,7 @@ public class SearchPage {
         return priceList;
     }
 
+    @Step
     public double extractNumberFromPrice(int index) {
         String priceString = page.driver.getDriver().findElement(By.cssSelector(String.format(productPrice, index))).getText();
         int s = priceString.indexOf("€");

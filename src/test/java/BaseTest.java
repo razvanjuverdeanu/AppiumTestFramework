@@ -23,7 +23,7 @@ public class BaseTest extends AbstractTestNGSpringContextTests {
     @Autowired
     SearchPage searchPage;
 
-    public String rakutenLink = "https://www.rakuten.com";
+    public String rakutenLink = "https://www.rakuten.de";
 
     @BeforeMethod(alwaysRun = true)
     public void createTestContext(ITestContext context) {

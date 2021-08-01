@@ -1,8 +1,0 @@
-pages\BasePage.class
-helpers\Utils.class
-component\TheDriver.class
-config\ApplicationContextConfig.class
-pages\HomePage.class
-pages\SearchPage.class
-helpers\TestListener.class
-helpers\Constants.class
